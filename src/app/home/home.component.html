@@ -1,0 +1,14 @@
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of banners">
+            <th scope="row">{{item.id}}</th>
+            <td><img src="{{item.link}}" alt=""></td>
+        </tr>
+    </tbody>
+</table>

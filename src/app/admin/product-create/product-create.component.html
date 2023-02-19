@@ -1,0 +1,28 @@
+
+<div class="row">
+    <div class="col-4">
+        <!-- productFormCreate dùng để map với cái bên ts  -->
+        <!-- ngSubmit để khi người dùng bấm submit sẽ chạy hàm này  -->
+        <form action="" [formGroup]="productFormCreate" (ngSubmit)="onCreate()">
+            <h1>Form thêm mới</h1>
+            <div class="form-group">
+                <label for="">Name</label>
+                <!-- formControlName dùng để map với cái bên file ts  -->
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="form-group">
+                <label for="">Price</label>
+                <input type="text" class="form-control" formControlName="price">
+            </div>
+            <div class="form-group">
+                <label for="">Sale_price</label>
+                <input type="text" class="form-control" formControlName="sale_price">
+            </div>
+            <div class="form-group">
+                <label for="">Image</label>
+                <input type="text" class="form-control" formControlName="image">
+            </div>
+            <button type="submit" class="btn btn-primary">Lưu lại</button>
+        </form>
+    </div>
+</div>
